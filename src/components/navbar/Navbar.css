@@ -1,0 +1,85 @@
+.eyefind__navbar {
+    background-color: #f3f3f3;
+    border: 1.5px solid #b8b8b8;
+
+    margin-top: -5px;
+    margin-bottom: 1rem;
+}
+
+.eyefind__navbar ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+
+    font-size: 1rem;
+}
+
+.eyefind__navbar ul li {
+    margin: 0;
+    padding: 0.5rem 2rem;
+
+    text-align: center;
+    text-transform: uppercase;
+    border-left: 1.5px solid #b8b8b8;
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: nowrap;
+    overflow: auto;
+
+    align-content: center;
+    flex-direction: row; */
+}
+
+.eyefind__navbar ul li:first-child {
+    border: 0 !important;
+}
+.eyefind__navbar ul li:hover {
+    cursor: pointer;
+    background-color: #4e94c935;
+}
+  
+.eyefind__navbar ul li:active {
+    opacity: 0.5;
+}
+  
+.eyefind__navbar ul li svg {
+    font-size: 2rem;
+    color: #4e93c9;
+}
+
+@media screen and (max-width: 1024px) {
+    .eyefind__navbar ul li {
+        font-size: 0.6rem;
+    }
+
+    .eyefind__navbar ul li svg {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .eyefind__navbar ul li p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .eyefind__navbar ul li {
+        padding: 0.5rem 1rem;
+    }
+    
+    .eyefind__navbar ul li svg {
+        font-size: 1.5rem;
+    }
+
+}

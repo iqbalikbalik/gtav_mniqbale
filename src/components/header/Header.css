@@ -1,0 +1,152 @@
+.eyefind__header {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #4e93c9;
+    border-bottom: 10px solid #f6c851;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.eyefind__header-top,
+.eyefind__header-bottom form{
+    display: flex;
+    flex-direction: row;
+}
+
+.eyefind__header-top_logo {
+    flex: 1;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.eyefind__header-top_logo img {
+    width: 100%;
+    height: auto;
+
+    max-width: 15rem;
+}
+
+.eyefind__header-top_time {
+    flex: 0.3;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+    /* padding: 1rem; */
+}
+
+.time__day {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    font-size: var(--large-size);
+    color: #fff;
+
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-right: 3px solid #fff;
+}
+
+.time__day div:last-child {
+    margin-top: 0.5em;
+}
+
+.time__weather {
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.time__weather svg {
+    font-size: 60px;
+    color: #FBBD13;
+}
+
+.eyefind__header-bottom form .eyefind__header-bottom_input {
+    flex: 1;
+    position: relative;
+}
+
+.eyefind__header-bottom {
+    margin-top: 2rem;
+}
+
+.eyefind__header-bottom_input input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 0;
+    font-size: var(--large-size);
+    padding-left: 3.3rem;
+}
+
+.eyefind__header-bottom_input input::placeholder {
+    color: #000;
+}
+
+.eyefind__header-bottom_input svg {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    top: 0.3rem;
+    margin-left: 0.5rem;
+    font-size: 30px;
+
+    color: #4E8DC2;
+}
+
+.eyefind__header-bottom_button {
+    flex: 0.25;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.eyefind__header-bottom_button button {
+    width: 90%;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0f758f;
+    font-size: var(--large-size);
+    text-transform: uppercase;
+}
+
+.eyefind__header-bottom_button button:hover {
+    background-color: #0a5c71;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 551px) {
+    .eyefind__header-bottom_button button svg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .eyefind__header-top_logo img {
+        max-width: 8rem;
+    }
+
+    .time__weather svg {
+        font-size: 40px;
+    }
+
+    .eyefind__header-bottom {
+        margin-top: 1rem;
+    }
+
+    .eyefind__header-bottom_button button {
+        font-size: 1.5em;
+    }
+
+    .eyefind__header-bottom_button button p {
+        display: none;
+    }
+}
