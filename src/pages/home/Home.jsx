@@ -10,7 +10,7 @@ const Home = () => {
             <div className='article__head'>
               <div className='article__title'>
                 <h1>News Story of the day</h1>
-                <h2>Arms trafficking skyrockets in desert region.</h2>
+                <h2>2023 - Arms trafficking skyrockets in desert region.</h2>
               </div>
               <div className='article__img'>
                 <img src="https://dunqm0.csb.app/media/images/senora-beacon.png" alt="" />
